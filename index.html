@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Board</title>
+    <!-- Main Stylesheet or Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8184740b0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start of  Header Section -->
+
+    <header>
+      <!-- Start of Main Menu -->
+
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="images/icons/logo.png" alt="logo" /> <span> Idea</span>
+          </a>
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">works</a></li>
+          <li>
+            <a href="#"><img src="images/icons/profile.png" alt="profile" /></a>
+          </li>
+        </ul>
+
+        <div class="toggle" onclick="openNav();">
+          <span> <i class="fas fa-bars"></i> </span>
+        </div>
+      </nav>
+
+      <!-- End  of Main Menu -->
+
+      <!-- Start of Navigation Menu -->
+
+      <div id="navigation" class="navigation">
+        <div class="close-btn">
+          <span class="closebtn" onclick="closeNav();">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <ul>
+          <li>
+            <a href="#" onclick="closeNav();">
+              <span class="icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </span>
+              <span class="title"> Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" onclick="closeNav();">
+              <span class="icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="title"> About</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" onclick="closeNav();">
+              <span class="icon"> <i class="far fa-comments"></i> </span>
+              <span class="title"> Works</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- End of Naviagation Menu -->
+    </header>
+    <!-- End of Header Section -->
+
+    <!------------ Main Section Start ------------>
+    <main>
+      <!-- Top Player  and Top Blog Section -->
+      <div class="top-sections">
+        <div class="container">
+          <section class="top-player">
+            <h2 class="title">Top Player</h2>
+            <div class="players-container">
+              <div class="player">
+                <img src="images/players/player-1.png" alt="player-1" />
+                <h3>John Smith</h3>
+              </div>
+              <div class="player">
+                <img src="images/players/player-2.png" alt="player-2" />
+                <h3>Pro Rasel</h3>
+              </div>
+              <div class="player">
+                <img src="images/players/player-3.png" alt="player-3" />
+                <h3>Abu Sufian</h3>
+              </div>
+              <div class="player">
+                <img src="images/players/player-4.png" alt="player-4" />
+                <h3>Shajedul Karim</h3>
+              </div>
+              <div class="player">
+                <img src="images/players/player-5.png" alt="player-5" />
+                <h3>Maruf Ahmed</h3>
+              </div>
+              <div class="player">
+                <img src="images/players/player-6.png" alt="player-6" />
+                <h3>Mujahid</h3>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section class="top-blog">
+            <h2 class="title">Top Blog</h2>
+            <div class="blogs-container">
+              <article class="blog">
+                <div class="blog-thumbnails">
+                  <img src="images/blogs/blog-1.png" alt="blog-1" />
+                </div>
+                <div class="blog-details">
+                  <h2>13 of My Favorite UI/UX Goodies</h2>
+                  <p>By <a href="#" target="_blank"> Danny Sapio </a></p>
+                </div>
+              </article>
+              <article class="blog">
+                <div class="blog-thumbnails">
+                  <img src="images/blogs/blog-2.png" alt="blog-2" />
+                </div>
+                <div class="blog-details">
+                  <h2>7 typography tips for interface design</h2>
+                  <p>By <a href="#" target="_blank"> Jeremiah Lam </a></p>
+                </div>
+              </article>
+              <article class="blog">
+                <div class="blog-thumbnails">
+                  <img src="images/blogs/blog-3.png" alt="blog-3" />
+                </div>
+                <div class="blog-details">
+                  <h2>UI cheat sheet: list vs grids</h2>
+                  <p>By <a href="#" target="_blank">Tess Gadd </a></p>
+                </div>
+              </article>
+              <article class="blog">
+                <div class="blog-thumbnails">
+                  <img src="images/blogs/blog-4.png" alt="blog-4" />
+                </div>
+                <div class="blog-details">
+                  <h2>Your logo is copied</h2>
+                  <p>By <a href="#" target="_blank"> Ferdinand Vogler </a></p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Latest Course -->
+      <section class="latest-course">
+        <div class="container">
+          <h2 class="title">Latest Course</h2>
+          <div class="course-container">
+            <div class="course">
+              <div class="course-banner">
+                <img src="images/courses/course-1.png" alt="course-1" />
+                <h2>React - The Complete Guid 2020</h2>
+                <p>Reed Krakoff.</p>
+              </div>
+              <div class="course-details">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star empty"></i>
+                  </div>
+                  <div class="rating-text">
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <div class="text">
+                    <span>01:30 hr </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course">
+              <div class="course-banner">
+                <img src="images/courses/course-2.png" alt="course-2" />
+                <h2>Powerpoint 2020 - Master Powerpoint Course</h2>
+                <p>Walter Scott</p>
+              </div>
+              <div class="course-details">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star empty"></i>
+                  </div>
+                  <div class="rating-text">
+                    <span>4.3</span>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <div class="text">
+                    <span>01:20 hr </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course">
+              <div class="course-banner">
+                <img src="images/courses/course-3.png" alt="course-3" />
+                <h2>The Complete JavaScript Course 2020</h2>
+                <p>Reed Krakoff.</p>
+              </div>
+              <div class="course-details">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star empty"></i>
+                  </div>
+                  <div class="rating-text">
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <div class="text">
+                    <span>01:30 hr </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------ Main Section End ------------>
+    <!-- Main Js File -->
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
